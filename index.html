@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Veda Sankalpa - Donation Certificate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f6f6f6;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+
+   .logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+   .logo img {
+  height: 40px; 
+  max-width: 100%;
+}
+
+.certificate-banner {
+  background-color: #FDC935;
+  padding: 8px 30px;              
+  border-radius: 12px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+
+  width: 70%;                    
+  max-width: 700px;               
+  margin: 10px auto;              
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.certificate-banner h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.certificate-banner .welcome-text {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.certificate-banner p {
+  margin: 6px 0 0;
+  font-size: 7px;
+  font-weight: 400;
+}
+
+
+.donation-summary {
+  border-radius: 0;
+  background-color: #fdeee8;
+  padding: 6px 15px;
+  font-family: 'Poppins', sans-serif;
+  margin: 4px 0;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.donation-summary h3 {
+  text-align: center;
+  font-size: 16px;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.donation-summary table {
+  width: 90%;
+  font-size: 12px;
+  font-weight: 500;
+  border-collapse: collapse;
+}
+
+.donation-summary td {
+  padding: 5px 0;
+  vertical-align: top;
+}
+
+.donation-summary td:first-child {
+  width: 45%;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.donation-summary td:last-child {
+  text-align: center;
+  padding-left: 40px;
+}
+
+.donation-summary a {
+  color: #000;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+    .achievements {
+      background-color: #801f00;
+      text-align: center;
+      padding: 20px 10px;
+      color: white;
+    }
+
+    .achievements img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .spread-word {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  color: #000;
+  margin: 0; 
+  line-height: 1.5;
+}
+
+.spread-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+
+.claim-title {
+  font-weight: 0;
+  margin: 10px 0 5px 0;
+}
+
+.claim-steps {
+  padding-left: 18px;
+  margin: 0 0 10px 0;
+}
+
+.claim-steps li {
+  margin-bottom: 3px;
+}
+
+.support-info {
+  margin: 0;
+}
+
+.support-info a {
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+
+.gratitude {
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px 10px;
+  margin-top:2px ;
+  max-width: 1000px;
+}
+
+.banner-img {
+  width: 95%;
+  height: 100%;
+  object-fit: center;
+  filter: brightness(85%);
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 6%;
+  left: 8%;
+  color: rgb(214, 211, 211);
+  max-width: 350px;
+  font-size: 12px;
+}
+
+.banner-content h2 {
+  font-size: 8px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.banner-content p {
+  font-size: 5px;
+  margin-bottom: 14px;
+}
+
+.donate-btn {
+  background-color: hsl(11, 95%, 29%);
+  color: rgb(222, 217, 217);
+  padding: 8px 34px;
+  border-radius: 16px;
+  font-size: 10px;
+  text-decoration: none;
+  font-weight: 300px;
+  display: inline-block;
+}
+
+.footer {
+  background-color: #a22b0e; 
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  flex-wrap: wrap;
+}
+
+.footer-left a {
+  color: white;
+  font-size: 18px;
+  margin-right: 12px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.footer-left a:hover {
+  transform: scale(1.1);
+}
+
+.footer-right {
+  font-size: 8px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="logo.png" alt="Veda Sankalpa Logo">
+    </div>
+
+    <!-- Certificate Banner -->
+    <div class="certificate-banner">
+      <h2>Donation Certificate</h2>
+      <p class="welcome-text"><strong>Welcome to the Veda Sankalpa family!</strong></p>
+      <p>Thank you for your generous contribution to uphold Sanatan Dharma and fuel positive change.</p>
+    </div>
+
+    <!-- Donation Summary -->
+    <div class="donation-summary">
+      <h3>Donation Summary</h3>
+      <table>
+        <tr>
+          <td>Total Amount:</td>
+          <td>₹ 2,200</td>
+        </tr>
+        <tr>
+          <td>To Campaign:</td>
+          <td>₹ 2,000</td>
+        </tr>
+        <tr>
+          <td>Tip:</td>
+          <td>₹ 200</td>
+        </tr>
+        <tr>
+          <td>Transaction ID:</td>
+          <td>VS3a7ef302a1b47468120</td>
+        </tr>
+        <tr>
+          <td>Campaign:</td>
+          <td><a href="#">vedasankalpa.com/donation/Varahi-Temple-construction-2025</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Achievements -->
+    <div class="achievements">
+      <img src="Image1.png" alt="Our Achievements">
+    </div>
+
+  <!-- Spread the Word -->
+<div class="spread-word">
+  <p class="spread-title">📣 Spread the Word</p>
+  <p>Share your Donation Certificate on social media or WhatsApp Stories—along with the campaign link—to inspire others to join our mission!</p>
+  
+  <p class="claim-title">Claim Your 80G Certificate</p>
+  <ol class="claim-steps">
+    <li>Log in to your Veda Sankalpa account.</li>
+    <li>Go to Order Transactions.</li>
+    <li>Download your donation acknowledgement and 80G certificate.</li>
+  </ol>
+
+  <p class="support-info">
+    If you have any questions or need assistance, please reply to this email at 
+    <a href="mailto:support@vedasankalpa.com"><strong>support@vedasankalpa.com</strong></a> or reach us at 
+    <strong>+91 9256 58 5656</strong>. We’re always here to help.
+  </p>
+
+  <p class="gratitude">With heartfelt gratitude,<br>Team Veda Sankalpa</p>
+</div>
+
+<div class="donation-card">
+    <div class="banner">
+      <img src="Image2.png" alt="Temple" class="banner-img" />
+      <div class="banner-content">
+        <h2>Support construction of Gayatri Devi Temple in Siddipet</h2>
+        <p>
+          We are incredibly grateful for your donation. Help us spread the word!<br />
+          Share your impact on social media and inspire others to join the cause.
+        </p>
+        <a href="#" class="donate-btn">Donate now</a>
+      </div>
+    </div>
+
+    <div class="footer">
+  <div class="footer-left">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+  <div class="footer-right">
+    <strong>Address:</strong> 101, Vipras Elite, Door No: 1/90/7/B/79/22A,<br />
+    Street No: 1, Patrika Nagar, HITEC City, Hyderabad,<br />
+    Telangana – 500081
+  </div>
+</div>
+
+  </div>
+</body>
+</html>
+
